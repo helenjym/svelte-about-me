@@ -58,7 +58,7 @@
 <style>
 
   :global(body) {
-    background-image: url('./src/photos/background.png');
+    background-image: url('./photos/background.png');
   }
 
   h1 {

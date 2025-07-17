@@ -35,30 +35,30 @@
   ];
 
   function typewriter(node, { speed = 1 }) {
-	const valid = node.childNodes.length === 1 && node.childNodes[0].nodeType === Node.TEXT_NODE;
+    const valid = node.childNodes.length === 1 && node.childNodes[0].nodeType === Node.TEXT_NODE;
 
-	if (!valid) {
-		throw new Error(`This transition only works on elements with a single text node child`);
-	}
+    if (!valid) {
+      throw new Error(`This transition only works on elements with a single text node child`);
+    }
 
-	const text = node.textContent;
-	const duration = text.length / (speed * 0.01);
+    const text = node.textContent;
+    const duration = text.length / (speed * 0.01);
 
-	return {
-		duration,
-		tick: (t) => {
-			const i = Math.trunc(text.length * t);
-			node.textContent = text.slice(0, i);
-		}
-	};
-} 
+    return {
+      duration,
+      tick: (t) => {
+        const i = Math.trunc(text.length * t);
+        node.textContent = text.slice(0, i);
+      }
+    };
+  } 
 
 </script>
 
 <style>
 
   :global(body) {
-    background-image: url('background.png');
+    background-color: #f2f9ed;
   }
 
   h1 {
@@ -100,11 +100,11 @@
 
 <div class="bg">
   <div class="container">
-    <h1 transition:typewriter>About Me!</h1>
+    <h1 transition:typewriter|global>About Me!</h1>
     <p>Hello, my name is <strong>{name}</strong>!</p>
     <p>My favorite number is <strong>{favoriteNumber}</strong>.</p>
     <p>{bio}</p>
-    <img class='profile' src='./src/photos/me.JPG' alt='girl wearing blue shirt sitting on grass and holding up a peace sign'>
+    <img class='profile' src='me.JPG' alt='girl wearing blue shirt sitting on grass and holding up a peace sign'>
 
     <h2>My Hobbies</h2>
     <div class="hobbies">

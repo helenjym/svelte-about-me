@@ -10,7 +10,7 @@
   let cardData = [
     {
       image:
-        "./photos/IMG_3953.jpg",
+        "IMG_3953.jpg",
       title: "Hiking",
       description:
         "Very blessed to live in the Pacific Northwest where there are so many beautiful trails and parks!! I feel most at peace in the midst of very tall trees <3.",
@@ -18,7 +18,7 @@
       imgDesc: "Me on a trail in so-called Bowen Island, BC."
     },
     {
-      image: "./photos/IMG_5157.jpeg",
+      image: "IMG_5157.jpeg",
       title: "Volunteering",
       description: "As an introvert that also craves human connection, volunteering is something I love because it gets me out of my bubble, gives me a better understanding of my local community, and is always a chance to learn new things!",
       imgAlt: "Group of 6 people standing in a cafe with a chalkboard menu behind them that says Sprouts ",
@@ -26,7 +26,7 @@
 
     },
     {
-      image: "./photos/IMG_1048.jpg",
+      image: "IMG_1048.jpg",
       title: "K-pop",
       description:"I was a <strong>big</strong> K-pop fan throughout high school and ran 4 different fan accounts at one point (although none very successful and all very embarrassing to look back on haha). My favourite groups/artists include Seventeen, Twice, Pristin, New Jeans, and IU!",
      imgAlt: "Photo of a stage at a stadium, two screens on the side read Seventeen World Tour: Be The Sun",
@@ -58,7 +58,7 @@
 <style>
 
   :global(body) {
-    background-image: url('./photos/background.png');
+    background-image: url('background.png');
   }
 
   h1 {

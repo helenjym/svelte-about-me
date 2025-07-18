@@ -57,9 +57,6 @@
 
 <style>
 
-  :global(body) {
-    background-color: #f2f9ed;
-  }
 
   h1 {
     color: #e97f92;
